@@ -2,5 +2,4 @@ title: "Mo's Blog"
 description: "Notes, projects, and updates."
 url: "https://mmoradi97.github.io"
 baseurl: ""
-theme: minima
-
+theme: slate
