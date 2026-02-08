@@ -1,24 +1,93 @@
 --- --- @import "{{ site.theme }}";
 
 #container {
-    max-width: 900px;
+    max-width: 980px;
 }
 
-body {
+.hero {
+    padding: 24px 22px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    background: radial-gradient(1200px 400px at 20% 0%, rgba(80, 200, 255, 0.18), transparent 60%),
+        radial-gradient(1000px 400px at 80% 20%, rgba(255, 80, 220, 0.12), transparent 55%);
+    margin: 10px 0 18px;
+}
+
+.kicker {
+    opacity: 0.85;
+    margin: 0 0 6px;
+}
+
+.lead {
     font-size: 18px;
-    line-height: 1.7;
+    opacity: 0.95;
+    max-width: 60ch;
 }
 
-h1,
-h2,
-h3 {
-    letter-spacing: 0.2px;
+.cta-row {
+    margin-top: 14px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
-a {
-    text-decoration: none;
+.btn {
+    display: inline-block;
+    padding: 10px 14px;
+    border-radius: 10px;
+    background: #2aa8ff;
+    color: #071018 !important;
+    font-weight: 700;
+    text-decoration: none !important;
 }
 
-a:hover {
-    text-decoration: underline;
+.btn:hover {
+    filter: brightness(1.05);
+}
+
+.btn-ghost {
+    background: transparent;
+    color: #eaeaea !important;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    margin: 14px 0 8px;
+}
+
+.card {
+    padding: 14px 14px;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.post-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.post-list li {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 8px 0;
+}
+
+.post-list .meta {
+    opacity: 0.75;
+    white-space: nowrap;
+}
+
+@media (max-width: 800px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .post-list li {
+        flex-direction: column;
+    }
 }
