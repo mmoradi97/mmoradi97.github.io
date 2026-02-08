@@ -4,4 +4,5 @@ title: Contact
 permalink: /contact/
 ---
 
-Email: <a href="mailto:YOUR_EMAIL_HERE">YOUR_EMAIL_HERE</a>
+Email: <a href="mailto:mmoradi97@icloud.com">mmoradi97@icloud.com</a>
+
