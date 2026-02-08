@@ -1,8 +1,78 @@
+<style>
+    .site-footer {
+        margin-top: 34px;
+        padding: 22px 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.14);
+        background: rgba(255, 255, 255, 0.04);
+    }
+
+    .site-footer .footer-inner {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 18px;
+    }
+
+    .site-footer .footer-grid {
+        display: grid;
+        grid-template-columns: 1.3fr 1fr 1fr;
+        gap: 22px;
+        align-items: start;
+    }
+
+    .site-footer .footer-title {
+        font-weight: 800;
+        margin-bottom: 10px;
+    }
+
+    .site-footer .footer-muted {
+        opacity: 0.75;
+    }
+
+    .site-footer ul {
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
+    }
+
+    .site-footer li {
+        margin: 7px 0;
+        padding-left: 0;
+    }
+
+    .site-footer li::before,
+    .site-footer a::before {
+        content: "" !important;
+        display: none !important;
+    }
+
+    .site-footer a {
+        text-decoration: none;
+    }
+
+    .site-footer a:hover {
+        text-decoration: underline;
+    }
+
+    .site-footer .footer-bottom {
+        margin-top: 16px;
+        padding-top: 12px;
+        border-top: 1px solid rgba(255, 255, 255, 0.10);
+        opacity: 0.70;
+        font-size: 14px;
+    }
+
+    @media (max-width:820px) {
+        .site-footer .footer-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+
 <footer class="site-footer">
     <div class="footer-inner">
         <div class="footer-grid">
             <div class="footer-col">
-                <div class="footer-title">Mo’s Blog</div>
+                <div class="footer-title">Mo's Blog</div>
                 <div class="footer-muted">Notes, projects, and updates.</div>
             </div>
 
