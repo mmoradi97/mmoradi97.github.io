@@ -1,61 +1,28 @@
 --- --- @import "{{ site.theme }}";
 
 #container {
-    max-width: 980px;
+    max-width: 1100px;
+}
+
+/* Two-column layout */
+.layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 320px;
+    gap: 18px;
+    align-items: start;
+}
+
+.sidebar {
+    position: sticky;
+    top: 18px;
 }
 
 .hero {
-    padding: 24px 22px;
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 18px 18px;
     border-radius: 14px;
-    background: radial-gradient(1200px 400px at 20% 0%, rgba(80, 200, 255, 0.18), transparent 60%),
-        radial-gradient(1000px 400px at 80% 20%, rgba(255, 80, 220, 0.12), transparent 55%);
-    margin: 10px 0 18px;
-}
-
-.kicker {
-    opacity: 0.85;
-    margin: 0 0 6px;
-}
-
-.lead {
-    font-size: 18px;
-    opacity: 0.95;
-    max-width: 60ch;
-}
-
-.cta-row {
-    margin-top: 14px;
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 14px;
-    border-radius: 10px;
-    background: #2aa8ff;
-    color: #071018 !important;
-    font-weight: 700;
-    text-decoration: none !important;
-}
-
-.btn:hover {
-    filter: brightness(1.05);
-}
-
-.btn-ghost {
-    background: transparent;
-    color: #eaeaea !important;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 12px;
-    margin: 14px 0 8px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.03);
+    margin-bottom: 14px;
 }
 
 .card {
@@ -63,6 +30,7 @@
     border-radius: 14px;
     border: 1px solid rgba(255, 255, 255, 0.10);
     background: rgba(255, 255, 255, 0.03);
+    margin-bottom: 12px;
 }
 
 .post-list {
@@ -75,6 +43,7 @@
     justify-content: space-between;
     gap: 12px;
     padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .post-list .meta {
@@ -82,9 +51,14 @@
     white-space: nowrap;
 }
 
-@media (max-width: 800px) {
-    .grid {
+/* Mobile: stack columns */
+@media (max-width: 900px) {
+    .layout {
         grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: static;
     }
 
     .post-list li {
