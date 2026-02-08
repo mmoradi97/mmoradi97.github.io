@@ -7,16 +7,22 @@
 
         <div class="footer-col">
             <div class="footer-title">Links</div>
-            <a href="/about/">About</a><br>
-            <a href="/projects/">Projects</a><br>
-            <a href="/contact/">Contact</a><br>
-            <a href="/feed.xml">RSS</a>
+            <ul class="footer-links">
+                <li><a href="/about/">About</a></li>
+                <li><a href="/projects/">Projects</a></li>
+                <li><a href="/contact/">Contact</a></li>
+                <li><a href="/feed.xml">RSS</a></li>
+            </ul>
         </div>
 
         <div class="footer-col">
             <div class="footer-title">Contact</div>
-            <a href="mailto:mmoradi97@icloud.com">mmoradi97@icloud.com</a>
-            <div class="footer-muted" style="margin-top:8px;">Warsaw • CET</div>
+            <div><a href="mailto:mmoradi97@icloud.com">mmoradi97@icloud.com</a></div>
+            <div class="footer-muted" style="margin-top:10px;">Warsaw • CET</div>
         </div>
+    </div>
+
+    <div class="footer-bottom">
+        © {{ site.time | date: "%Y" }} • Built with GitHub Pages
     </div>
 </footer>
