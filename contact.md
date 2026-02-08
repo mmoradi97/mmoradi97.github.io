@@ -9,6 +9,8 @@ permalink: /contact/
 Use the form below to send me a message. I'll get back to you as soon as I can.
 
 <form action="https://formspree.io/f/mreagwkd" method="POST" class="contact-form">
+  <input type="hidden" name="_next" value="https://mmoradi97.github.io/thank-you/">
+  
   <div class="form-group">
     <label for="name">Name</label>
     <input type="text" id="name" name="name" required>
