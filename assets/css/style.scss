@@ -8,7 +8,6 @@
     max-width: 1100px;
 }
 
-/* Slightly improve readability */
 body {
     font-size: 18px;
     line-height: 1.7;
@@ -23,14 +22,15 @@ a:hover {
 }
 
 /* --------
-   Homepage layout helpers (your index.md classes)
+   Homepage (hero + posts)
    -------- */
 
 .hero {
     padding: 18px 18px;
     border-radius: 14px;
     border: 1px solid rgba(255, 255, 255, 0.10);
-    background: radial-gradient(1200px 400px at 20% 0%, rgba(80, 200, 255, 0.18), transparent 60%),
+    background:
+        radial-gradient(1200px 400px at 20% 0%, rgba(80, 200, 255, 0.18), transparent 60%),
         radial-gradient(1000px 400px at 80% 20%, rgba(255, 80, 220, 0.12), transparent 55%),
         rgba(255, 255, 255, 0.02);
     margin: 10px 0 18px;
@@ -47,30 +47,12 @@ a:hover {
     max-width: 65ch;
 }
 
-/* Card blocks used in sidebar/footer */
-.card {
-    padding: 14px 14px;
-    border-radius: 14px;
-    border: 1px solid rgba(255, 255, 255, 0.10);
-    background: rgba(255, 255, 255, 0.03);
-    margin-bottom: 12px;
+.home-note {
+    opacity: 0.75;
+    margin-top: 14px;
 }
 
-/* If you use the two-column homepage layout */
-.layout {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) 320px;
-    gap: 18px;
-    align-items: start;
-}
-
-/* Sticky sidebar on desktop */
-.sidebar {
-    position: sticky;
-    top: 18px;
-}
-
-/* Posts list styling (homepage) */
+/* Posts list */
 .post-list {
     list-style: none;
     padding-left: 0;
@@ -90,14 +72,73 @@ a:hover {
     white-space: nowrap;
 }
 
-/* Mobile: stack columns, unstick sidebar */
 @media (max-width: 900px) {
-    .layout {
+    .post-list li {
+        flex-direction: column;
+    }
+}
+
+/* --------
+   Footer (“bottom layer”)
+   Used by _includes/site-footer.html
+   -------- */
+
+.site-footer {
+    margin: 28px 0 0;
+    padding: 18px 18px;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 14px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr;
+    gap: 18px;
+    align-items: start;
+}
+
+.footer-col {
+    min-width: 0;
+}
+
+.footer-title {
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.footer-muted {
+    opacity: 0.75;
+}
+
+.footer-links {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin: 6px 0;
+}
+
+.site-footer a {
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    margin-top: 14px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    opacity: 0.70;
+    font-size: 14px;
+}
+
+@media (max-width: 900px) {
+    .footer-grid {
         grid-template-columns: 1fr;
     }
-
-    .sidebar {
-        position: static;
-    }
-
-    .post-list li {
+}
