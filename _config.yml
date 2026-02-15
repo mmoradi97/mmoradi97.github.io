@@ -1,10 +1,54 @@
 title: "Mo's Blog"
 tagline: "Notes, projects, and updates."
-description: "Personal blog and updates."
+description: "Personal website and blog: notes, project writeups, and updates."
 
 url: "https://mmoradi97.github.io"
 baseurl: ""
 
-remote_theme: pages-themes/midnight@v0.2.0
+lang: en
+timezone: Europe/Warsaw
+
+github:
+  username: mmoradi97
+
+social:
+  name: Mo Moradi
+  links:
+    - https://github.com/mmoradi97
+
+# Chirpy theme
+remote_theme: cotes2020/jekyll-theme-chirpy
+
 plugins:
   - jekyll-remote-theme
+  - jekyll-include-cache
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-paginate
+
+paginate: 8
+
+collections:
+  tabs:
+    output: true
+    sort_by: order
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      toc: true
+      comments: false
+
+# Prevent legacy files from overriding the Chirpy theme
+exclude:
+  - _includes
+  - _layouts
+  - assets/css/style.scss
+  - about.md
+  - projects.md
+  - contact.md
+  - thank-you.md
