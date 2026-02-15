@@ -29,6 +29,11 @@ plugins:
 
 paginate: 8
 
+collections:
+  tabs:
+    output: true
+    sort_by: order
+
 defaults:
   - scope:
       path: ""
@@ -37,3 +42,13 @@ defaults:
       layout: post
       toc: true
       comments: false
+
+# Prevent legacy files from overriding the Chirpy theme
+exclude:
+  - _includes
+  - _layouts
+  - assets/css/style.scss
+  - about.md
+  - projects.md
+  - contact.md
+  - thank-you.md
