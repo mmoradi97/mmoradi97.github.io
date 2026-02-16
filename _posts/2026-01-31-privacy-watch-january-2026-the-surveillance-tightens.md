@@ -1,6 +1,6 @@
 ---
 title: "Privacy Watch: January 2026 - The Surveillance Tightens"
-date: 2026-02-16 23:30:00 +0100
+date: 2026-02-16 21:00:00 +0100
 categories: [privacy]
 tags: [privacy, data-breach, surveillance]
 series: "Privacy Watch"
