@@ -1,6 +1,6 @@
 ---
 title: "Privacy Watch: January 2026 - The Surveillance Tightens"
-date: 2026-02-16 23:30:00 +0100
+date: 2026-02-17 10:00:00 +0100
 categories: [privacy]
 tags: [privacy, data-breach, surveillance]
 series: "Privacy Watch"
@@ -22,9 +22,7 @@ _Abstract data leak: when identifiers spill, they keep getting reused against yo
 Big breaches are the visible part of the problem: they turn everyday accounts into permanent attack surface.
 
 - Instagram breach listing (data in the wild; check whether your email/phone is included): [Have I Been Pwned — Instagram](https://haveibeenpwned.com/Breach/Instagram)
-- Notable January 2026 breaches roundup: [Security Magazine — January 2026 breaches](https://www.securitymagazine.com/articles/102110-7-data-breaches-exposures-to-know-about-january-2026)
-
-**Why it matters:** once your identifiers (email, phone, handles) are out, you become easier to target with phishing, SIM swap attempts, doxxing, and credential stuffing.
+- Notable January 2026 breaches roundup: [Security Magazine — January 2026 breaches](https://www.securitymagazine.com/articles/102110-7-data-breaches-exposures-to-know-about-january-2026)\n\n**Why it matters:** once your identifiers (email, phone, handles) are out, you become easier to target with phishing, SIM swap attempts, doxxing, and credential stuffing.
 
 ## The regulation headlines
 
@@ -59,7 +57,6 @@ Pick 2–3 actions and actually do them.
 Doing everything once is better than doing nothing perfectly.
 
 - Turn on a password manager + change your most reused passwords.
-- Enable phishing-resistant 2FA where possible (passkeys or security keys; avoid SMS for important accounts).
-- Reduce your public exposure: remove phone number from public profiles; lock down who can find you by email/phone.
+- Enable phishing-resistant 2FA where possible (passkeys or security keys; avoid SMS for important accounts).\n- Reduce your public exposure: remove phone number from public profiles; lock down who can find you by email/phone.
 - Audit logins: check “active sessions” / “devices” in your main accounts and sign out of everything you don’t recognize.
 - Minimize data: delete old accounts you don’t use; opt out of marketing where it’s offered; disable ad personalization.
