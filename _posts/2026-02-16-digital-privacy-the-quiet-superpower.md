@@ -3,7 +3,6 @@ title: "Digital Privacy: The Quiet Superpower"
 date: 2026-02-16
 categories: [privacy]
 tags: [privacy, security, digital-rights]
-pin: true
 description: Privacy is autonomy, safety, and leverage—especially in a world that logs everything.
 image: https://commons.wikimedia.org/wiki/Special:FilePath/Cybersecurity.png
 ---

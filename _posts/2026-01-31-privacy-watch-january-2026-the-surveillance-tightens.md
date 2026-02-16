@@ -4,9 +4,8 @@ date: 2026-01-31 23:00:00 +0100
 categories: [privacy]
 tags: [privacy, data-breach, surveillance]
 series: "Privacy Watch"
-img_path: /assets/img/posts/privacy-watch/2026-01/
 image:
-  path: pw-2026-01-cover.svg
+  path: /assets/img/posts/privacy-watch/2026-01/pw-2026-01-cover.svg
   alt: "Abstract digital surveillance network"
 ---
 
@@ -17,7 +16,7 @@ It’s the same old pattern: more collection, more exposure, more pressure to no
 
 ## The breaches
 
-![Abstract data leak](breach-leak.svg)
+![Abstract data leak](/assets/img/posts/privacy-watch/2026-01/breach-leak.svg)
 _Abstract data leak: when identifiers spill, they keep getting reused against you._
 
 Big breaches are the visible part of the problem: they turn everyday accounts into permanent attack surface.
@@ -37,7 +36,7 @@ Often they change incentives: companies document more; users get more pop-ups; c
 
 ## The surveillance reality check
 
-![Surveillance grid](surveillance-grid.svg)
+![Surveillance grid](/assets/img/posts/privacy-watch/2026-01/surveillance-grid.svg)
 _Surveillance doesn’t need to be dramatic to be effective — it just needs to be normal._
 
 Three things can be true at once:
