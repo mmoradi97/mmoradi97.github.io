@@ -5,9 +5,9 @@ order: 1
 layout: page
 ---
 
-Hi, I’m Mo.
+I’m an SRE with 10+ years of experience, focused on building reliable, scalable systems—and making production calmer and more predictable. I enjoy building things and coding just as much as operations: automation, tooling, and small improvements that remove friction.
 
-I use this site to publish short notes, project writeups, and things I learn while building.
+I’m also very interested in security and digital privacy, and how they intersect with modern infrastructure and everyday engineering.
 
 ## What you’ll find here
 - Engineering notes (practical, copy/paste-friendly)
