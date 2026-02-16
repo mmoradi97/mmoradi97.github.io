@@ -5,46 +5,87 @@ order: 3
 layout: page
 ---
 
+**Email:**
+
 [mmoradi97@icloud.com](mailto:mmoradi97@icloud.com)
 
+**Form:**
+
 <style>
-  /* Minimal styling for the embedded Formspree form (works even without any CSS framework). */
+  /* Contact form styling that works in both light & dark mode. */
+  :root {
+    --cf-bg: rgba(255, 255, 255, 0.85);
+    --cf-border: rgba(0, 0, 0, 0.14);
+    --cf-border-focus: rgba(0, 0, 0, 0.28);
+    --cf-btn-bg: rgba(0, 0, 0, 0.04);
+    --cf-btn-bg-hover: rgba(0, 0, 0, 0.07);
+    --cf-btn-border: rgba(0, 0, 0, 0.18);
+  }
+
+  /* Chirpy typically sets html[data-mode]. If it doesn't, the media query below still helps. */
+  html[data-mode='dark'] {
+    --cf-bg: rgba(255, 255, 255, 0.04);
+    --cf-border: rgba(255, 255, 255, 0.18);
+    --cf-border-focus: rgba(255, 255, 255, 0.35);
+    --cf-btn-bg: rgba(255, 255, 255, 0.08);
+    --cf-btn-bg-hover: rgba(255, 255, 255, 0.12);
+    --cf-btn-border: rgba(255, 255, 255, 0.25);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --cf-bg: rgba(255, 255, 255, 0.04);
+      --cf-border: rgba(255, 255, 255, 0.18);
+      --cf-border-focus: rgba(255, 255, 255, 0.35);
+      --cf-btn-bg: rgba(255, 255, 255, 0.08);
+      --cf-btn-bg-hover: rgba(255, 255, 255, 0.12);
+      --cf-btn-border: rgba(255, 255, 255, 0.25);
+    }
+  }
+
   .contact-form {
     max-width: 520px;
+    margin-top: 0.75rem;
   }
+
   .contact-form .field {
     margin: 0 0 1rem 0;
   }
+
   .contact-form label {
     display: block;
     font-weight: 600;
     margin: 0 0 0.35rem 0;
   }
+
   .contact-form input,
   .contact-form textarea {
     width: 100%;
     padding: 0.75rem 0.9rem;
-    border-radius: 0.5rem;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    background: rgba(255, 255, 255, 0.04);
+    border-radius: 0.6rem;
+    border: 1px solid var(--cf-border);
+    background: var(--cf-bg);
     color: inherit;
     outline: none;
   }
+
   .contact-form input:focus,
   .contact-form textarea:focus {
-    border-color: rgba(255, 255, 255, 0.35);
+    border-color: var(--cf-border-focus);
   }
+
   .contact-form button {
     padding: 0.65rem 1.0rem;
-    border-radius: 0.55rem;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    background: rgba(255, 255, 255, 0.08);
+    border-radius: 0.6rem;
+    border: 1px solid var(--cf-btn-border);
+    background: var(--cf-btn-bg);
     color: inherit;
     font-weight: 600;
     cursor: pointer;
   }
+
   .contact-form button:hover {
-    background: rgba(255, 255, 255, 0.12);
+    background: var(--cf-btn-bg-hover);
   }
 </style>
 
