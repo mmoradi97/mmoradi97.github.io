@@ -2,12 +2,11 @@
   Custom additions to <head>.
 
   Favicon:
-  Some browsers ignore empty SVG data-URIs, so we explicitly override the theme's
-  favicon links with `data:,` (a standard “empty” favicon).
+  We want a truly "blank" favicon.
 
-  If you want a real favicon later, we can replace these with actual files.
+  Some browsers (notably Safari) can ignore empty SVG/data:, so we provide a
+  1x1 transparent PNG via a data-URI and override common favicon link rels.
 -->
-<link rel="icon" href="data:,">
-<link rel="shortcut icon" href="data:,">
-<link rel="apple-touch-icon" href="data:,">
-<meta name="msapplication-TileImage" content="data:,">
+<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMB/6XfW1sAAAAASUVORK5CYII=">
+<link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMB/6XfW1sAAAAASUVORK5CYII=">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMB/6XfW1sAAAAASUVORK5CYII=">
