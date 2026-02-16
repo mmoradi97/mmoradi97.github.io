@@ -1,6 +1,6 @@
 ---
 title: "Privacy Watch: January 2026 - The Surveillance Tightens"
-date: 2026-01-31 23:00:00 +0100
+date: 2026-02-16 23:30:00 +0100
 categories: [privacy]
 tags: [privacy, data-breach, surveillance]
 series: "Privacy Watch"
@@ -63,9 +63,3 @@ Doing everything once is better than doing nothing perfectly.
 - Reduce your public exposure: remove phone number from public profiles; lock down who can find you by email/phone.
 - Audit logins: check “active sessions” / “devices” in your main accounts and sign out of everything you don’t recognize.
 - Minimize data: delete old accounts you don’t use; opt out of marketing where it’s offered; disable ad personalization.
-
-## Next Privacy Watch
-
-If you want, I’ll keep each month focused on:
-- What changed that increases risk.
-- The one or two moves that materially reduce exposure.
