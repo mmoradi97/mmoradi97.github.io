@@ -1,6 +1,6 @@
 ---
 title: "Digital Privacy: The Quiet Superpower"
-date: 2026-02-16
+date: 2026-02-16 12:00:00 +0100
 categories: [privacy]
 tags: [privacy, security, digital-rights]
 description: Privacy is autonomy, safety, and leverage—especially in a world that logs everything.
@@ -31,8 +31,7 @@ Privacy isn’t only for celebrities or activists. It’s for ordinary life:
 
 A healthy society needs room for people to explore ideas and grow without everything becoming a permanent record.
 
-## A practical mindset (not perfection)
-You don’t need to disappear from the internet. You just need to reduce unnecessary exposure.
+## A practical mindset (not perfection)\nYou don’t need to disappear from the internet. You just need to reduce unnecessary exposure.
 
 A few high-leverage habits:
 - Use a password manager + unique passwords everywhere.
