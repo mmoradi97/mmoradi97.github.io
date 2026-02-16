@@ -5,9 +5,31 @@ order: 3
 layout: page
 ---
 
-You can reach me here:
+[mmoradi97@icloud.com](mailto:mmoradi97@icloud.com)
 
-- Email: [mmoradi97@icloud.com](mailto:mmoradi97@icloud.com)
-- GitHub: https://github.com/mmoradi97
+<form action="https://formspree.io/f/mreagwkd" method="POST">
+  <p>
+    <label>
+      Name<br>
+      <input type="text" name="name" required>
+    </label>
+  </p>
 
-(If you prefer, I can add a lightweight contact form later—Formspree/Netlify Forms/etc.)
+  <p>
+    <label>
+      Email<br>
+      <input type="email" name="email" required>
+    </label>
+  </p>
+
+  <p>
+    <label>
+      Message<br>
+      <textarea name="message" rows="6" required></textarea>
+    </label>
+  </p>
+
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
