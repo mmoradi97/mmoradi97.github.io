@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="Abstract digital surveillance network">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1020"/>
+      <stop offset="1" stop-color="#05070f"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="45%" r="60%">
+      <stop offset="0" stop-color="#2dd4bf" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#2dd4bf" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#glow)"/>
+
+  <!-- faint grid -->
+  <g opacity="0.08" stroke="#a7f3d0" stroke-width="1">
+    <path d="M0 120H1600"/>
+    <path d="M0 240H1600"/>
+    <path d="M0 360H1600"/>
+    <path d="M0 480H1600"/>
+    <path d="M0 600H1600"/>
+    <path d="M0 720H1600"/>
+    <path d="M140 0V900"/>
+    <path d="M320 0V900"/>
+    <path d="M500 0V900"/>
+    <path d="M680 0V900"/>
+    <path d="M860 0V900"/>
+    <path d="M1040 0V900"/>
+    <path d="M1220 0V900"/>
+    <path d="M1400 0V900"/>
+  </g>
+
+  <!-- connections -->
+  <g fill="none" stroke="#2dd4bf" stroke-width="2" opacity="0.35">
+    <path d="M240 650 C420 520, 520 470, 690 410"/>
+    <path d="M690 410 C860 350, 1020 360, 1180 290"/>
+    <path d="M520 210 C690 330, 860 460, 1010 540"/>
+    <path d="M1010 540 C1120 600, 1260 610, 1420 560"/>
+    <path d="M330 360 C510 330, 640 300, 820 240"/>
+    <path d="M820 240 C980 190, 1110 170, 1290 210"/>
+  </g>
+
+  <!-- nodes -->
+  <g>
+    <g filter="url(#soft)" opacity="0.55">
+      <circle cx="240" cy="650" r="10" fill="#2dd4bf"/>
+      <circle cx="690" cy="410" r="10" fill="#2dd4bf"/>
+      <circle cx="1180" cy="290" r="10" fill="#2dd4bf"/>
+      <circle cx="520" cy="210" r="10" fill="#2dd4bf"/>
+      <circle cx="1010" cy="540" r="10" fill="#2dd4bf"/>
+      <circle cx="1420" cy="560" r="10" fill="#2dd4bf"/>
+      <circle cx="330" cy="360" r="10" fill="#2dd4bf"/>
+      <circle cx="820" cy="240" r="10" fill="#2dd4bf"/>
+      <circle cx="1290" cy="210" r="10" fill="#2dd4bf"/>
+    </g>
+
+    <g opacity="0.95">
+      <circle cx="240" cy="650" r="6" fill="#e5fff9"/>
+      <circle cx="690" cy="410" r="6" fill="#e5fff9"/>
+      <circle cx="1180" cy="290" r="6" fill="#e5fff9"/>
+      <circle cx="520" cy="210" r="6" fill="#e5fff9"/>
+      <circle cx="1010" cy="540" r="6" fill="#e5fff9"/>
+      <circle cx="1420" cy="560" r="6" fill="#e5fff9"/>
+      <circle cx="330" cy="360" r="6" fill="#e5fff9"/>
+      <circle cx="820" cy="240" r="6" fill="#e5fff9"/>
+      <circle cx="1290" cy="210" r="6" fill="#e5fff9"/>
+    </g>
+  </g>
+
+  <!-- subtle title block (no words, just UI hint) -->
+  <g opacity="0.18" stroke="#e5fff9" fill="none">
+    <rect x="120" y="120" width="520" height="120" rx="18"/>
+    <path d="M160 160H590"/>
+    <path d="M160 195H480"/>
+  </g>
+</svg>

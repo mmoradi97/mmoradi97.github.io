@@ -4,6 +4,10 @@ date: 2026-01-31 23:00:00 +0100
 categories: [privacy]
 tags: [privacy, data-breach, surveillance]
 series: "Privacy Watch"
+img_path: /assets/img/posts/privacy-watch/2026-01/
+image:
+  path: pw-2026-01-cover.svg
+  alt: "Abstract digital surveillance network"
 ---
 
 January 2026 was a reminder that **privacy** isn’t something you “get” from a policy page or a new regulation — it’s something you lose quietly, then notice too late.
@@ -12,6 +16,9 @@ This month’s story is not “good news” about new rules.
 It’s the same old pattern: more collection, more exposure, more pressure to normalize surveillance.
 
 ## The breaches
+
+![Abstract data leak](breach-leak.svg)
+_Abstract data leak: when identifiers spill, they keep getting reused against you._
 
 Big breaches are the visible part of the problem: they turn everyday accounts into permanent attack surface.
 
@@ -29,6 +36,9 @@ Often they change incentives: companies document more; users get more pop-ups; c
 - What to watch in 2026 (EU privacy/cyber): [Inside Privacy — Key 2026 developments](https://www.insideprivacy.com/european-union-2/what-to-watch-in-2026-key-eu-privacy-cybersecurity-developments/)
 
 ## The surveillance reality check
+
+![Surveillance grid](surveillance-grid.svg)
+_Surveillance doesn’t need to be dramatic to be effective — it just needs to be normal._
 
 Three things can be true at once:
 
@@ -60,4 +70,3 @@ Doing everything once is better than doing nothing perfectly.
 If you want, I’ll keep each month focused on:
 - What changed that increases risk.
 - The one or two moves that materially reduce exposure.
-
