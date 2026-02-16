@@ -1,6 +1,6 @@
 ---
 title: "Digital Privacy: The Quiet Superpower"
-date: 2026-02-16 02:30:00 +0100
+date: 2026-02-16
 categories: [privacy]
 tags: [privacy, security, digital-rights]
 pin: true
