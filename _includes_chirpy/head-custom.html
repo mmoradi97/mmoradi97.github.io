@@ -10,3 +10,27 @@
 <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMB/6XfW1sAAAAASUVORK5CYII=">
 <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMB/6XfW1sAAAAASUVORK5CYII=">
 <link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMB/6XfW1sAAAAASUVORK5CYII=">
+
+<!-- Unregister any existing service workers and clear caches -->
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.getRegistrations().then(function(registrations) {
+      for (let registration of registrations) {
+        registration.unregister().then(function(success) {
+          if (success) {
+            console.log('Service worker unregistered successfully');
+          }
+        });
+      }
+    });
+    
+    // Clear all caches
+    if ('caches' in window) {
+      caches.keys().then(function(cacheNames) {
+        cacheNames.forEach(function(cacheName) {
+          caches.delete(cacheName);
+        });
+      });
+    }
+  }
+</script>
