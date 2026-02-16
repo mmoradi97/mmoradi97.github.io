@@ -16,6 +16,9 @@ social:
   links:
     - https://github.com/mmoradi97
 
+# Sidebar avatar (use a hosted image for now)
+avatar: "https://avatars.githubusercontent.com/u/72094509?v=4"
+
 # Chirpy theme (use the theme gem, not remote_theme)
 theme: jekyll-theme-chirpy
 
