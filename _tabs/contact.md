@@ -5,8 +5,9 @@ order: 3
 layout: page
 ---
 
-The simplest way to reach me is via GitHub.
+You can reach me here:
 
+- Email: [mmoradi97@icloud.com](mailto:mmoradi97@icloud.com)
 - GitHub: https://github.com/mmoradi97
 
-If you want, I can add a proper email link and a lightweight contact form once you confirm where you want messages delivered (email, Formspree, Netlify Forms, etc.).
+(If you prefer, I can add a lightweight contact form later—Formspree/Netlify Forms/etc.)
