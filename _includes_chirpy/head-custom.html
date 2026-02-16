@@ -2,9 +2,12 @@
   Custom additions to <head>.
 
   Favicon:
-  For now we intentionally override the theme favicon with an “empty” favicon
-  (so browsers don't show the default Chirpy icon).
-  Replace these later with real favicon files.
+  Some browsers ignore empty SVG data-URIs, so we explicitly override the theme's
+  favicon links with `data:,` (a standard “empty” favicon).
+
+  If you want a real favicon later, we can replace these with actual files.
 -->
-<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27/%3E">
-<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27/%3E">
+<link rel="icon" href="data:,">
+<link rel="shortcut icon" href="data:,">
+<link rel="apple-touch-icon" href="data:,">
+<meta name="msapplication-TileImage" content="data:,">
