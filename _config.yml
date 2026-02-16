@@ -22,6 +22,11 @@ avatar: "https://avatars.githubusercontent.com/u/72094509?v=4"
 # Chirpy theme (use the theme gem, not remote_theme)
 theme: jekyll-theme-chirpy
 
+# Disable PWA (Progressive Web App) and service worker
+# This prevents aggressive caching of favicon and other assets
+pwa:
+  enabled: false
+
 plugins:
   - jekyll-include-cache
   - jekyll-seo-tag
