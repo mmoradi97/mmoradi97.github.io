@@ -16,11 +16,10 @@ social:
   links:
     - https://github.com/mmoradi97
 
-# Chirpy theme
-remote_theme: cotes2020/jekyll-theme-chirpy
+# Chirpy theme (use the theme gem, not remote_theme)
+theme: jekyll-theme-chirpy
 
 plugins:
-  - jekyll-remote-theme
   - jekyll-include-cache
   - jekyll-seo-tag
   - jekyll-sitemap
@@ -58,3 +57,4 @@ exclude:
   - projects.md
   - contact.md
   - thank-you.md
+  - index.md
