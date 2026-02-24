@@ -1,4 +1,4 @@
-# mo's blog
+# Temp blog
 
 This repository powers https://mmoradi97.github.io.
 
